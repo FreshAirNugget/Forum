@@ -34,6 +34,7 @@ gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'simple_form', '~> 3.5', '>= 3.5.1'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'coffee-script-source', '1.8.0'
+gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

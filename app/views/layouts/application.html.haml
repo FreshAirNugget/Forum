@@ -1,0 +1,22 @@
+!!!
+%html
+%head
+	%title Raditya Rails Forum
+	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+	%link{ :rel => "stylesheet", :href => "https://fonts.googleapis.com/css?family=Oswald|Raleway", :type => "text/css"}
+	%link{:rel => "stylesheet", :href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"}/
+	= javascript_include_tag 'application', 'data-turbolinks-track' => true
+	= csrf_meta_tags
+%body
+	%header.main_header.clearfix
+		.wrapper
+			#logo 
+				%p Raditya Rails Forum
+			#buttons
+				= link_to "New Post", new_post_path
+	.wrapper
+		%p.notice= notice
+		%p.alert= alert
+
+	.wrapper
+		= yield
