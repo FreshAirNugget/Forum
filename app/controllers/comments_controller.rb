@@ -6,7 +6,11 @@ class CommentsController < ApplicationController
 		if @comment.save
 			redirect_to post_path(@post)
 		else
+<<<<<<< HEAD
 			render "new"
+=======
+			render 'new'
+>>>>>>> a8fbac5... added comment function
 		end
 	end
 end
